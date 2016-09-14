@@ -1,0 +1,2 @@
+{:require [todomvc.todomvc]
+ :compiler-options {:asset-path "js/app.out"}}
