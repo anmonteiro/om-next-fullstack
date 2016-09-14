@@ -1,16 +1,11 @@
 (set-env!
   :source-paths    #{"src/clj" "src/shared"}
   :resource-paths  #{"resources"}
-  :dependencies '[ ;; Shared
-                  [org.omcljs/om               "1.0.0-alpha45"]
+  :dependencies '[[org.omcljs/om               "1.0.0-alpha45"]
                   [bidi                        "2.0.10"         :exclusions [ring/ring-core]]
-
-                  ;; Client
                   [org.clojure/clojurescript   "1.9.229"]
                   [kibu/pushy "0.3.6"]
                   [com.cognitect/transit-cljs  "0.8.239"]
-
-                  ;; Server
                   [hiccup                      "1.0.5"]
                   [com.cognitect/transit-clj   "0.8.288"]
                   [org.clojure/tools.logging   "0.3.1"]
@@ -26,7 +21,6 @@
                                 org.slf4j/slf4j-log4j12 org.slf4j/log4j-over-slf4j]]
                   [com.stuartsierra/component  "0.3.1"]
 
-                  ;; Tooling
                   [org.danielsz/system         "0.3.2-SNAPSHOT"]
                   [boot-environ "1.1.0"]
                   [com.cemerick/piggieback     "0.2.1"          :scope "test"]

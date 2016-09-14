@@ -1,6 +1,8 @@
 # om-next-fullstack
 
-Requires Om `1.0.0-alpha45`.
+Fullstack application demoing Om Next server-side rendering.
+
+Note: Requires Om `1.0.0-alpha45`.
 
 ## Running
 
