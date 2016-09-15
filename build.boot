@@ -44,13 +44,6 @@
 
 (deftask deps [])
 
-(deftask data-readers []
-    (fn [next-task]
-      (fn [fileset]
-        (#'clojure.core/load-data-readers)
-        (with-bindings {#'*data-readers* (.getRawRoot #'*data-readers*)}
-          (next-task fileset)))))
-
 (deftask dev []
   (comp
     (environ :env {:db-uri   "datomic:mem://localhost:4334/todos"
