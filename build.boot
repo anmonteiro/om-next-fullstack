@@ -1,8 +1,9 @@
 (set-env!
   :source-paths    #{"src/clj" "src/shared"}
   :resource-paths  #{"resources"}
-  :dependencies '[[org.omcljs/om               "1.0.0-alpha45"]
-                  [bidi                        "2.0.10"         :exclusions [ring/ring-core]]
+  :dependencies '[[org.omcljs/om               "1.0.0-alpha46"]
+                  [bidi                        "2.0.11"         :exclusions [ring/ring-core]]
+                  [org.clojure/clojure         "1.9.0-alpha13"]
                   [org.clojure/clojurescript   "1.9.229"]
                   [kibu/pushy "0.3.6"]
                   [com.cognitect/transit-cljs  "0.8.239"]
@@ -14,8 +15,8 @@
                    :exclusions [javax.mail/mail javax.jms/jms
                                 com.sun.jmdk/jmxtools com.sun.jmx/jmxri]]
                   [environ                     "1.1.0"]
-                  [ring                        "1.6.0-beta5"]
-                  [ring/ring-headers           "0.2.0"]
+                  [ring                        "1.6.0-beta6"]
+                  [ring/ring-headers           "0.3.0-beta1"]
                   [com.datomic/datomic-free    "0.9.5394"
                    :exclusions [org.slf4j/slf4j-api org.slf4j/slf4j-nop
                                 org.slf4j/slf4j-log4j12 org.slf4j/log4j-over-slf4j]]
